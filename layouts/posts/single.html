@@ -115,7 +115,7 @@
                 {{- /* Comment Count */ -}}
                 {{- if $comment.enable | and $comment.waline.enable | and $comment.waline.commentCount -}}
                     <span id="{{ .RelPermalink }}" class="comment_count" data-flag-title="{{ .Title }}">
-                        <i class="far fa-comments fa-fw"></i>&nbsp;<span class="waline-comment-count" id="waline-comment-count"></span>&nbsp;{{ T "comments" }}
+                        <i class="far fa-comments fa-fw"></i>&nbsp;<span class="{{ .RelPermalink }}" id="waline-comment-count"></span>&nbsp;{{ T "comments" }}
                     </span>&nbsp;
                 {{- end -}}
                 {{- if $comment.enable | and $comment.twikoo.enable | and $comment.twikoo.commentCount -}}
